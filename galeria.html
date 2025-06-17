@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melhor Amigo - Galeria</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Melhor Amigo</a>
+      <ul>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="galeria.html" class="active">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Galeria de Fotos</h1>
+    <div class="galeria">
+      <figure>
+        <img src="imagens/filhote-de-cachorro_1.jpg.avif" alt="Amigo 1" onclick="abrirImagem(this)" />
+        <figcaption>Bolinha, o cachorrinho feliz</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/gata-tricolor-no-jardim.webp" alt="Amigo 2" onclick="abrirImagem(this)" />
+        <figcaption>Mimi, a gatinha brincalhona</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/YellowLabradorLooking_new.jpg" alt="Amigo 3" onclick="abrirImagem(this)" />
+        <figcaption>Thor, o labrador brincalhão</figcaption>
+      </figure>
+    </div>
+
+    <div id="modal" class="modal" onclick="fecharModal()">
+      <span class="fechar">&times;</span>
+      <img class="modal-conteudo" id="img-modal" />
+      <div id="caption"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Petshop Melhor Amigo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
