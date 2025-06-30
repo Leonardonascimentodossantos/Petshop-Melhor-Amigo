@@ -14,8 +14,16 @@ body {
 
 header {
   background: #2e7d32; /* verde escuro */
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+#logoArea {
+  display: flex;
+  align-items: center;
 }
 
 #logoImg {
@@ -23,10 +31,15 @@ header {
   width: 500px;
 }
 
+#logoTitle {
+  height: 100px;
+  width: 100px;
+}
+
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: end;
 }
 
 nav .logo {
@@ -39,7 +52,7 @@ nav .logo {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 nav ul li a {
@@ -51,17 +64,47 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
   text-decoration: underline;
+  background-color: white;
+  border-radius: 2px;
+  color:#2e7d32
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   max-width: 960px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-h1, h2, h3 {
+#center-title {
+  display: flex;
+  justify-content: center;
+
+}
+
+header h1 {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+h1, h2 {
   margin-bottom: 1rem;
   color: #2e7d32;
+}
+
+h3 {
+  color: #2e7d32;
+}
+
+#apresentation{
+  background-color: #2e7d32;
+  color: #fff;
+  border: solid black 5px;
 }
 
 .hero {
@@ -95,7 +138,10 @@ h1, h2, h3 {
 }
 
 .produto-secao {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .produto {
